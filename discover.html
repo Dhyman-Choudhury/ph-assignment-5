@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F4F7FF] py-5">
+    <header class="bg-white max-w-screen-xl rounded-xl mx-auto  p-5">
+        <nav class="flex justify-between">
+               <div class="flex justify-center items-center gap-2">
+                  <img src="./assets/logo.png" alt="">
+                  <h1 class="font-light text-3xl">Dev<span class="text-black font-bold ">Board</span></h1>
+               </div>
+               <div id="back_desk" class="flex justify-center items-center ">
+                   <button  class="text-white btn bg-blue-600 ">Back to Desk</button>
+               </div>
+        </nav>
+       </header>
+        <h2 class="font-bold text-black text-3xl text-center my-5">Blogs</h2>
+
+        <!-- Question and Answer Section -->
+         <section class="max-w-screen-xl  mx-auto ">
+            <div class="w-full bg-white mb-5 p-5 rounded-xl">
+                <h3 class="font-bold text-xl mb-2">Question-1: what are the different ways to select an element in DOM? </h3>
+                <hr class="border-dashed">
+                <p class="text-[16px] text-black  font-medium my-3">There are several different ways to select an element in DOM. <br>
+                 1. getElementById 2. getElementsByClassName 3.getElementsByName <br>
+                 4. getElementsByTagName 5. querySelector 6. querySelectorAll  </p>
+            </div>
+            <div class="w-full bg-white mb-5 p-5 rounded-xl">
+                <h3 class="font-bold text-xl mb-2">Question-2: What is the different between innerHTML, innerText, and textContent?</h3>
+                <hr class="border-dashed">
+                <p class="text-[16px] text-black font-medium my-3">
+                1. innerHTML set or get HTML content.It can read HTML and shows hidden text. <br>
+                2. innerText cannot read html and cannot show hidden text. It shows only visible text. <br>
+                3. textContent cannot read html but shows hidden text. It shows all text </p>
+            </div>
+            <div class="w-full bg-white mb-5 p-5 rounded-xl">
+                <h3 class="font-bold text-xl mb-2">Question-3: What is event delegation in the DOM?</h3>
+                <hr class="border-dashed">
+                <p class="text-[16px] text-black font-medium my-3">
+                     Event delegation is a technique where instead of adding event listeners to <br>
+                      multiple child elements, you add a single event listener to a parent  element. <br>
+                      The event then "bubbles up" from the child to the parent, allowing the parent to handle it. </p>
+            </div>
+            <div class="w-full bg-white mb-5 p-5 rounded-xl">
+                <h3 class="font-bold text-xl mb-2">Question-4: What is event building in the DOM?</h3>
+                <hr class="border-dashed">
+                <p class="text-[16px] text-black font-medium my-3">
+                Event binding is the technique of connecting an event (like click, mouseover, keyup, keydown etc.) <br>
+                 with an event handler for an element in the DOM. It is also called event handler. </p>
+            </div>
+            
+         </section>
+       <script src="./js/discover.js"></script>
+</body>
+</html>
