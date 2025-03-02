@@ -44,7 +44,8 @@ for (let i = 0; i < buttons.length; i++) {
    buttons[i].addEventListener('click', function() {
 
     alert('Board updated Successfully')
-    
+    // document.getElementById('added_card').style.visibility = 'visible';
+
         const taskAssigned = document.getElementById('task_assigned').innerText;
         const amount = taskAssigned-1;
         document.getElementById('task_assigned').innerText=amount;
@@ -62,14 +63,16 @@ for (let i = 0; i < buttons.length; i++) {
        for(let j=i; j<i+1; j++){
            const cardTitleText = cardTitle[i].innerText;
            
+           
            const div = document.createElement('div');
-            div.innerText=`
-            You have completed the task ${cardTitleText} at ${time}
+            div.innerHTML=`
+            <p id="added_p">You have completed the task ${cardTitleText} at ${time}</p>
             `
             container.appendChild(div);
 
         }
         
+        document.getElementById('added_card').style.display='block';
         this.disabled=true
        
         if(count===6){
@@ -83,6 +86,8 @@ for (let i = 0; i < buttons.length; i++) {
   document.getElementById('clear_btn')
    .addEventListener('click', function(){
     console.log('click')
-     document.getElementById('added_card').style.display = 'none'
+    document.getElementById('added_card').style.display='none';
+    document.getElementById('added_p').style.display='none';
+    
      
   })
